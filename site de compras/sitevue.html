@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale">
+    </meta>
+    <title> App produto</title>
+    <link rel="stylesheet" typr="text/css" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="carrinho">
+            <p>Carrinho({{carrinho.length}})</p>
+        </div>
+        <product :premium="premium" @add-to-cart="updateCart"></product>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="heartvue.js"></script>
+</body>
+
+</html>
